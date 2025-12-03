@@ -1,0 +1,73 @@
+/* style.css */
+/* Reset default margins and set base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f7fb;
+    color: #212121;
+    min-height: 100vh;
+}
+
+/* Navigation bar styles */
+nav {
+    background: #2b354a;
+    padding: 18px 0;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.09);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.15em;
+    padding: 12px 18px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background: #fbb040;
+    color: #2b354a;
+}
+
+/* Container for main page content */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(44,62,80,0.12);
+}
+
+/* Simple footer styles */
+footer {
+    background: #2b354a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 650px) {
+    .container {
+        padding: 14px;
+        margin: 16px;
+    }
+    nav ul {
+        gap: 20px;
+    }
+}
